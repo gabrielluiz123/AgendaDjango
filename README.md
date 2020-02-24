@@ -1,1 +1,1 @@
-AgendaDjango
+Agenda
