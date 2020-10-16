@@ -28,5 +28,35 @@
             {{contato.descricao}}
           </dd>
         </dl>
+<div class="row pt-5">
+                        <div class="col-xl"></div>
+                        <div class="col-xl-8">
+                            <h2 class="my-3">Comentario</h2>
+                            {%if comentario%}
+                                  <p>{{comentario|safe}}</p>
+                            {%endif%}
+
+                        </div>
+                        <div class="col-xl"></div>
+                    </div>
+
+<div class="row pt-5">
+                        <div class="col-xl"></div>
+                        <div class="col-xl-8">
+                            <h2 class="my-3">Deixe um comentário</h2>
+
+                            <form method="POST" action="{% url 'envia_coment' desafio_id %}">
+                                {% csrf_token %}
+                                  <input type="text" name="comment">
+                                {% include 'parciais/_messages.html' %}
+                                <input id="envia_comentario" type="submit" class="btn btn-primary"
+                                                value="Enviar">
+
+                            </form>
+
+
+                        </div>
+                        <div class="col-xl"></div>
+                    </div>
 
 {%endblock%}

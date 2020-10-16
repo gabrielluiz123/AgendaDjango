@@ -2,7 +2,7 @@
 {%block 'titulo'%}Registrar | {%endblock%}
 {% block 'conteudo' %}
 <h1>Cadastro</h1>
-    <form method="POST" action="{% url 'login' %}">
+    <form method="POST" action="{% url 'login' 0 %}">
         {% include 'parciais/_messages.html' %}
         {% csrf_token %}
   <div class="form-group">

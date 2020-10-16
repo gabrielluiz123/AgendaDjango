@@ -19,8 +19,8 @@
         <br><br>
 
         {% if 'accounts' not in request.path %}
-
-          <form method="get" action="{% url 'busca' %}">
+          <a class="navbar-brand" href="{% url 'logout' desafio_id %}">Logout</a>
+          <form method="get" action="{% url 'busca' desafio_id %}">
             <div class="form-group row">
               <div class="col-12">
                 <input class="form-control"
