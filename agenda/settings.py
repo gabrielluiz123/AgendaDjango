@@ -82,7 +82,7 @@ DATABASES = {
         'HOST': '18.219.154.84',
         'PORT': '3306',
         'USER': 'admin',
-        'PASSWORD': 'Maria@1601',
+        'PASSWORD': 'uifdhiufasd',
     }
 }
 

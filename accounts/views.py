@@ -47,7 +47,7 @@ def login(request, *args, **kwargs):
         smtp_ssl_port = 465
         # username ou email para logar no servidor
         username = 'gabriel.santos@primeinterway.com.br'
-        password = 'fordprefect@123'
+        password = 'udfisahfusdi'
 
         from_addr = 'gabriel.santos@primeinterway.com.br'
         to_addrs = ['gabriells760@gmail.com', 'igorrois@hotmail.com']
